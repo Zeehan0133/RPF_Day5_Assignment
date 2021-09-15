@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Day5_Assignment
+{
+    class Prob4_Harmonic_Num
+    {
+        public static void Harmonic()
+        {
+            int i;
+            float sum = 0;
+
+            int n = Convert.ToInt32(Console.ReadLine());
+            {
+
+                for (i = 1; i <= n; i++)
+                {
+                    sum = sum + (float)1 / i;
+                }
+
+
+                Console.WriteLine("nSum =" + sum);
+            }
+        }
+    }
+}
+
+program.cs file..>>
+
+using System;
+
+namespace Day5_Assignment
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            
+             Prob4_Harmonic_Num.Harmonic();
+
+
+            Console.ReadLine();
+        }
+    }
+}
+
