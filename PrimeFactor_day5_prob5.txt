@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Day5_Assignment
+{
+	class Prob_5_PrimeFector
+	{
+		public static bool isPrime(int i)
+			
+		{
+			for (int j = 2; j < i; j++)
+			{
+				if (i % j == 0)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+
+		public static void main(String[] args)
+		{
+
+			int n = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Enter the no. to find PrimeFactors:");
+			
+			
+			Console.WriteLine("The prime factors for the " + n + " is:");
+			
+
+			for (int i = 2; i <= n; i++)
+			{
+				if (isPrime(i))
+				{
+					Console.WriteLine(i + " ");
+				}
+			}
+			Console.WriteLine();
+		}
+	}
+}
+
+program.cs file...>>>
+
+using System;
+
+namespace Day5_Assignment
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            
+             Prob_5_PrimeFector.isPrime(23);
+            
+
+            Console.ReadLine();
+        }
+    }
+}
