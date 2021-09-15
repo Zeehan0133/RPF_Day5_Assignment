@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Day5_Assignment
+{
+    
+    class Prob3_Power_of_Two
+    {
+        public static void powerOfTwo()
+        {
+            // read in one command-line argument
+            int n = Convert.ToInt32(Console.ReadLine());
+             
+
+
+            int i = 0;                // count from 0 to N
+            int powerOfTwo = 1;       // the ith power of two
+
+            // repeat until i equals n
+            while (i<=n)
+            {
+                Console.WriteLine(i + " " + powerOfTwo);   // print out the power of two
+                powerOfTwo = 2 * powerOfTwo;                // double to get the next one
+                i = i + 1;
+            }
+        }
+    }
+}
+
+Program.cs file...**
+
+using System;
+
+namespace Day5_Assignment
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+           
+             Prob3_Power_of_Two.powerOfTwo();
+
+
+            Console.ReadLine();
+        }
+    }
+}
