@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Day5_Assignment
+{
+      class Prob_7_SwapTwoNumbers
+    {
+        public static void Swap_TwoNumbers()
+        {
+
+            int number1;
+            int number2;
+            int temp;
+            Console.WriteLine("Input the First Number \n: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput the Second Number : ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            temp = num1;
+            number1 = num2;
+            number2 = temp;
+
+            Console.Write("\nAfter Swapping : ");
+            Console.Write("\nFirst Number : " + number1);
+            Console.Write("\nSecond Number : " + number2);
+            
+        }
+    }
+}
+
+Program.cs file.....***
+
+using System;
+
+namespace Day5_Assignment
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            
+              Prob_6_Quotient_Remainder.Quotient_Remainder();
+ 
+            Console.ReadLine();
+        }
+    }
+}
